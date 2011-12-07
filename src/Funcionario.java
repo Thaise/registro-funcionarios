@@ -92,6 +92,24 @@ public class Funcionario {
 		return salarioTotal;
 	}
 	
+	public void mostraFuncionario(){
+		
+	if(getEscolaridade() ==  1){
+		System.out.println("\nNome: "+getNome());
+		System.out.println("Código funcional: "+getCodigoFuncional());
+		System.out.println("Salário: R$"+ getSalarioTotal());
+	}else if(getEscolaridade() ==  2 || getEscolaridade() ==  3){
+		System.out.println("\nNome: "+getNome());
+		System.out.println("Escola: "+getEscola());
+		System.out.println("Salário: R$"+ getSalarioTotal());
+	}else{
+		System.out.println("\nNome: "+getNome());
+		System.out.println("Universidade: "+getUniversidade());
+		System.out.println("Universidade: "+getCurso());
+		System.out.println("Salário: R$"+ getSalarioTotal());
+	}
+	}
+	
 
 	
 

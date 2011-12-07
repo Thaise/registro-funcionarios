@@ -65,21 +65,7 @@ public class FuncionarioCadastro {
 		
 		for(int i = 0; i < listaFuncionarios.size(); i++){	
 			Funcionario dadosFuncionario = listaFuncionarios.get(i);
-				
-			if(dadosFuncionario.getEscolaridade() ==  1){
-				System.out.println("\nNome: "+dadosFuncionario.getNome());
-				System.out.println("Código funcional: "+dadosFuncionario.getCodigoFuncional());
-				System.out.println("Salário: R$"+ dadosFuncionario.getSalarioTotal());
-			}else if(dadosFuncionario.getEscolaridade() ==  2 || dadosFuncionario.getEscolaridade() ==  3){
-				System.out.println("\nNome: "+dadosFuncionario.getNome());
-				System.out.println("Escola: "+dadosFuncionario.getEscola());
-				System.out.println("Salário: R$"+ dadosFuncionario.getSalarioTotal());
-			}else{
-				System.out.println("\nNome: "+dadosFuncionario.getNome());
-				System.out.println("Universidade: "+dadosFuncionario.getUniversidade());
-				System.out.println("Universidade: "+dadosFuncionario.getCurso());
-				System.out.println("Salário: R$"+ dadosFuncionario.getSalarioTotal());
-			}
+			dadosFuncionario.mostraFuncionario();
 		}
 		System.out.println("\nDespesa mensal com funcionários sem estudo: "+calcularDespesasSalarios(listaFuncionarios, 1));
 		System.out.println("Despesa mensal com funcionários com Ensino Fundamental: "+calcularDespesasSalarios(listaFuncionarios, 2));
